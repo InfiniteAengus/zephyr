@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar {
+  cursor: pointer;
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  cursor: pointer;
+  background: #09090b;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  cursor: pointer;
+  background: #afafaf41;
+  border-radius: 4px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #acafb183;
+}
+
+.u-text-clip-bg {
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.u-transition-color {
+  @apply transition-colors duration-300;
+}
+
+.u-text-overflow {
+  @apply overflow-hidden text-ellipsis whitespace-nowrap;
+}
+
+.m-gradient-text {
+  background-image: radial-gradient(36.82% 58.26% at 30.03% 41.74%, #fff 28.5%, #808080 100%);
+}
+
+.m-gradient-border {
+  background: linear-gradient(to right, #fff1 30%, #fff7 50%, #fff1 70%);
+}
+.m-gradient-border-start {
+  background: linear-gradient(to right, #fff7 10%, transparent 40%);
+}
+
+@keyframes slideGradient {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+.animate-lazy {
+  background: linear-gradient(90deg, #fff2, #ffffff01, #fff2);
+  background-size: 200% 100%;
+  animation: slideGradient 3s linear infinite;
+}
