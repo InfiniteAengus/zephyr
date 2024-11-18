@@ -1,2 +1,2 @@
 # zephyr
-module federation, react-vite, zephyr app
+module federation, vite/react, tanstack router, and zephyr app
