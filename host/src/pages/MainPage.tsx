@@ -1,6 +1,7 @@
 import { lazy, Suspense, useEffect, useMemo, useState } from "react";
 import { ICollection } from "../config/types";
 import { apiGetCollections } from "../lib/api";
+// @ts-ignore
 const CategoryView = lazy(async () => import("remote/category-view"));
 
 const MainPage = () => {

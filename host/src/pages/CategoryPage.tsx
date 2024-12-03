@@ -2,6 +2,7 @@ import { useParams } from "@tanstack/react-router";
 import { lazy, useEffect, useMemo, useState } from "react";
 import { apiGetCategory } from "../lib/api";
 import { ICategory } from "../config/types";
+// @ts-ignore
 const CategoryView = lazy(async () => import("remote/category-view"));
 
 const Category = () => {

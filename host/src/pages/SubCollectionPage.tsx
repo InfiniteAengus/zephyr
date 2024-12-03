@@ -2,6 +2,7 @@ import { useParams } from "@tanstack/react-router";
 import { lazy, useEffect, useState } from "react";
 import { apiGetProducts } from "../lib/api";
 import { IProduct } from "../config/types";
+// @ts-ignore
 const ProductsView = lazy(async () => import("remote/collection-view"));
 
 const SubCollection = () => {
